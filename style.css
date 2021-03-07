@@ -5,27 +5,36 @@
 .screen {
   max-width: 1440px;
   margin: 0 auto;
-  background: #fad8a5;
-  height: 100vh;
 }
 
 header {
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
-  padding-top: 2em;
+  padding: 2em 0;
   max-width: 1050px;
+  background-color: #e7e7e6;
 }
 
 .main-content {
   max-width: 1050px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background: #f3f3f3;
+}
+
+.hidden {
+  display: none;
 }
 
 .photo > img {
   max-width: 250px;
   border-radius: 50%;
-  border: 3px solid #5cb8fa;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .name {
@@ -38,25 +47,110 @@ header {
 }
 
 .name > p {
-  color: #52a4de;
+  color: #f97b4d;
 }
 
 .content {
   font-family: "Poppins", sans-serif;
-  display: flex;
-  justify-content: space-evenly;
+  max-width: 250px;
+  background-color: #f97b4d;
+  padding: 1em;
+  opacity: 0.9;
+  border-radius: 5%;
+  opacity: 0.9;
+  width: 100%;
 }
 
-li > h2 {
+.hljs {
+  display: block;
+  overflow-x: hidden;
+  background: rgb(241, 239, 238);
+  color: rgb(104, 97, 94);
+  padding: 0.5em;
+  border-radius: 5%;
+}
+.hljs-built_in {
+  color: rgb(223, 83, 32);
+}
+.hljs-keyword {
+  color: rgb(102, 102, 234);
+}
+.hljs-number {
+  color: rgb(223, 83, 32);
+}
+
+.content > h2 {
   text-align: center;
 }
 
-.content > li {
+.content > article {
   max-width: 250px;
   list-style: none;
 }
 
-li > p {
-  color: #646769;
+article > p,
+.content > ul {
+  color: #2a2d2e;
   text-align: justify;
+  padding-top: 1em;
+}
+
+.content > li {
+  color: #2a2d2e;
+  text-align: justify;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-2-line {
+  font-family: "Poppins", sans-serif;
+  max-width: 250px;
+  background-color: #f97b4d;
+  padding: 1em;
+  opacity: 0.9;
+  border-radius: 5%;
+  opacity: 0.9;
+  width: 100%;
+  margin-top: 1em;
+}
+
+footer {
+  background-color: #f3f3f3;
+  margin: 0 auto;
+  max-width: 1050px;
+  padding: 2em 0;
+  font-size: 1.35em;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  list-style-type: none;
+}
+
+.footUl {
+  list-style-type: none;
+  width: 100%;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#pic1,
+#pic3 {
+  max-width: 75px;
+  padding-right: 5px;
+}
+
+#pic2 {
+  max-width: 30px;
+  padding-right: 5px;
+  margin-bottom: -7px;
 }
