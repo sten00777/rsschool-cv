@@ -34,3 +34,8 @@ I am going through online training in rs-school on HTML, CSS, JS. Passed an inte
 * CSS (in process...)
 * JavaScript (in process...)
 * Git (in process...)
+
+## Languages
+
+* Russian - Native speaker
+* English - Intermediate (B1)
